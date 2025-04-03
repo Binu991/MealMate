@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="@drawable/rr"
+    tools:context=".FifthPage">
+
+    <Button
+        android:id="@+id/btnBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Back"
+        android:layout_marginRight="100dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvPickMeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:text="Pick meals for the week"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvPickMeals"
+        android:layout_marginBottom="30dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/tvGroceryShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery shop in one quick trip"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_marginBottom="40dp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvGroceryShop"
+        android:layout_marginBottom="40dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/tvCook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cook in 30 minutes"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btnGotIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got It"
+        android:textSize="32dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/green"/>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".QuestionPage4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBack7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Back"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvTitleQ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which day do you want to see as the first day of the week?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp" />
+
+        <CheckBox
+            android:id="@+id/cbSunday"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Sunday" />
+
+        <CheckBox
+            android:id="@+id/cbMonday"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Monday" />
+
+        <CheckBox
+            android:id="@+id/cbTuesday"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Tuesday" />
+
+        <CheckBox
+            android:id="@+id/cbWednesday"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Wednesday" />
+
+        <CheckBox
+            android:id="@+id/cbThursday"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Thursday" />
+
+        <CheckBox
+            android:id="@+id/cbFriday"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Friday" />
+
+        <CheckBox
+            android:id="@+id/cbSaturday"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Saturday" />
+
+        <Button
+            android:id="@+id/btnContinue7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>
+

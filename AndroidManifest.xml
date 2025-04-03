@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mealmate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MealMate"
+        tools:targetApi="31">
+        <activity
+            android:name=".YourRecipesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavedPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PurchasedItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MealPlanScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroceryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CollectRecipesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrowseMealsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddRecipeOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationSettingsActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".helper.NotificationReceiver" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.mealmate.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name=".AddGroceryItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage7"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage6"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage5"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage4"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage3"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage2"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage"
+            android:exported="false" />
+        <activity
+            android:name=".FifthPage"
+            android:exported="false" />
+        <activity
+            android:name=".FourthPage"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdPage"
+            android:exported="false" />
+        <activity
+            android:name=".SecondPage"
+            android:exported="false" />
+    </application>
+
+</manifest>

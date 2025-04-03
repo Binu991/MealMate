@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collectRecipesRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="20sp"
+            android:textColor="@color/green"
+            android:backgroundTint="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <TextView
+            android:id="@+id/tvMainHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collect your own recipes"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="155dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tvSubText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add your favourite recipes from outside MealMate\nand include them in your meal plans."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnAddARecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a Recipe"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:textSize="16sp"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

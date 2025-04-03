@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="8dp">
+
+    <CheckBox
+        android:id="@+id/checkBoxBought"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/checkBoxBought"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvQuantity" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 cup"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvItemName" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rs. 50"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvStore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Big Mart, Kathmandu"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        app:layout_constraintStart_toStartOf="@id/tvItemName"
+        app:layout_constraintTop_toBottomOf="@id/tvPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

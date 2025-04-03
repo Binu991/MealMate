@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_key">google_maps_key</string>
+    <string name="item_name_placeholder">Item Name</string>
+    <string name="quantity_placeholder">Qty: 1 cup</string>
+    <string name="price_placeholder">Rs. 50</string>
+    <string name="store_placeholder">Big Mart, Kathmandu</string>
+
+</resources>

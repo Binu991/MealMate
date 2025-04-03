@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".QuestionPage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnBack4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Back"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Why do you want to use this app? Select all that apply."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp" />
+
+
+        <CheckBox
+            android:id="@+id/cbDiet"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="To help me with my diet" />
+
+        <CheckBox
+            android:id="@+id/cbEatingHabits"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="To keep track of my eating habits" />
+
+        <CheckBox
+            android:id="@+id/cbLoseWeight"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="To help me lose weight" />
+
+        <CheckBox
+            android:id="@+id/cbGainWeight"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="To help me gain weight" />
+
+        <CheckBox
+            android:id="@+id/cbSaveMoney"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="To save money on groceries" />
+
+        <CheckBox
+            android:id="@+id/cbOrganized"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="To be better organized" />
+
+        <CheckBox
+            android:id="@+id/cbPregnancy"
+            style="@style/ReasonCheckBoxStyle"
+            android:text="Because of a pregnancy" />
+
+
+        <EditText
+            android:id="@+id/etOtherReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Other. Please fill in the reason..."
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnContinue4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/green"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</ScrollView>

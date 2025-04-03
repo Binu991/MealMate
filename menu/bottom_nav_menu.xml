@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24" />
+    <item
+        android:id="@+id/nav_meals"
+        android:title="Meals"
+        android:icon="@drawable/baseline_restaurant_menu_24" />
+    <item
+        android:id="@+id/nav_grocery"
+        android:title="Grocery"
+        android:icon="@drawable/baseline_local_grocery_store_24" />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24" />
+</menu>

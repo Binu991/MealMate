@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="key_ingredient_name" type="id"/>
+    <item name="key_ingredient_qty" type="id"/>
+</resources>
